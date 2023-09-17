@@ -11,8 +11,9 @@ import remarkPlantUML from '@akebifiky/remark-simple-plantuml';
 import { remarkReadingTime } from './remark-plugins/remark-reading-time.mjs';
 import { remarkDiagram } from './remark-plugins/remark-diagram.mjs';
 import markdoc from "@astrojs/markdoc";
-
 import netlify from "@astrojs/netlify/functions";
+
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -38,5 +39,5 @@ export default defineConfig({
   },
   scopedStyleStrategy: "where",
   output: "server",
-  adapter: netlify()
+  adapter: vercel()
 });
