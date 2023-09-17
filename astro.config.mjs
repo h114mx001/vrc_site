@@ -10,8 +10,9 @@ import rehypeKatex from 'rehype-katex';
 import remarkPlantUML from '@akebifiky/remark-simple-plantuml';
 import { remarkReadingTime } from './remark-plugins/remark-reading-time.mjs';
 import { remarkDiagram } from './remark-plugins/remark-diagram.mjs';
-
 import markdoc from "@astrojs/markdoc";
+
+import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
@@ -33,7 +34,9 @@ export default defineConfig({
       langs: [],
       // Enable word wrap to prevent horizontal scrolling
       wrap: true
-    },
+    }
   },
   scopedStyleStrategy: "where",
+  output: "server",
+  adapter: netlify()
 });
