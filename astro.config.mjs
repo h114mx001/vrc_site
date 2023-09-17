@@ -12,7 +12,7 @@ import { remarkReadingTime } from './remark-plugins/remark-reading-time.mjs';
 import { remarkDiagram } from './remark-plugins/remark-diagram.mjs';
 import markdoc from "@astrojs/markdoc";
 
-import vercelStatic from "@astrojs/vercel/static";
+import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
@@ -38,5 +38,5 @@ export default defineConfig({
   },
   scopedStyleStrategy: "where",
   output: "static",
-  adapter: vercelStatic()
+  adapter: netlify()
 });
