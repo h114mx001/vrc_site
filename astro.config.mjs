@@ -23,7 +23,7 @@ export default defineConfig({
     }
   },
   site: 'https://hellotham.github.io',
-  base: '/hello-astro/',
+  base: '/dist/',
   integrations: [tailwind(), sitemap(), mdx(), alpinejs(), robotsTxt(), markdoc()],
   markdown: {
     extendDefaultPlugins: true,
