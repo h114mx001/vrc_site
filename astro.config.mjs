@@ -23,7 +23,7 @@ export default defineConfig({
     }
   },
   site: 'https://vinuniresearchclub.netlify.app',
-  base: '/hello-astro/',
+  base: '/',
   integrations: [tailwind(), sitemap(), mdx(), alpinejs(), robotsTxt(), markdoc()],
   markdown: {
     extendDefaultPlugins: true,
@@ -37,6 +37,6 @@ export default defineConfig({
     }
   },
   scopedStyleStrategy: "where",
-  output: "server",
+  output: "static",
   adapter: netlify()
 });
