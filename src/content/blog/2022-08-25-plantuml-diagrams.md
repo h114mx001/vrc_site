@@ -1,7 +1,7 @@
 ---
 title: PlantUML Diagrams
 description: Generate PlantUML diagrams in blog posts.
-author: chris-tham
+author: default
 publishDate: 2022-08-25T00:00:00.000Z
 coverSVG: ../../assets/svg/undraw/undraw_process.svg
 socialImage: ../../assets/undraw/undraw_process.png
