@@ -32,18 +32,18 @@ export const SiteMetadata = {
   buildTime: new Date()
 }
 
-export { default as Logo } from './assets/svg/astro/astro-icon-dark.svg'
-export { default as LogoImage } from './assets/astro/astro-logo-dark.png'
-export { default as FeaturedSVG } from './assets/svg/undraw/undraw_design_inspiration.svg'
-export { default as DefaultSVG } from './assets/svg/undraw/undraw_my_feed.svg'
-export { default as DefaultImage } from './assets/undraw/undraw_my_feed.png'
+export { default as Logo } from './assets/vrc/logo_square.jpeg'
+export { default as LogoImage } from './assets/vrc/logo_square.jpeg'
+export { default as FeaturedSVG } from './assets/vrc/group_image.png'
+export { default as DefaultSVG } from './assets/vrc/group_image.png'
+export { default as DefaultImage } from './assets/vrc/group_image.png'
 
 export const NavigationLinks = [
   { name: "Home", href: '' },
   { name: 'About', href: 'about' },
   { name: 'Activities', href: '' },
   { name: 'News', href: 'blog' },
-  { name: 'Research Projects', href: '' },
+  { name: 'Research Projects', href: 'researchprojects' },
   { name: 'Contact', href: 'contact' },
 ]
 
