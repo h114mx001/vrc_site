@@ -9,25 +9,25 @@ export interface TagType {
 }
 
 export const SiteMetadata = {
-  title: 'Hello Astro',
-  description: 'An Astro starter for corporate/marketing/blog websites.',
+  title: 'VinUni Research Club',
+  description: 'A student-led academic club aiming to create a close-knit community interested in research.',
   author: {
-    name: 'Chris Tham',
-    twitter: '@chris1tham',
-    url: 'https://christham.net',
-    email: 'chris@christham.net',
-    summary: 'Outrageous actualiser.'
+    name: '',
+    twitter: '',
+    url: '',
+    email: '',
+    summary: ''
   },
   org: {
-    name: 'Hello Tham',
-    twitter: '@hellothamcom',
-    url: 'https://hellotham.com',
-    email: 'info@hellotham.com',
+    name: '',
+    twitter: '',
+    url: '',
+    email: '',
     summary:
-      'Hello Tham is a boutique management consulting firm. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.'
+      ''
   },
-  location: 'Rivendell, Middle Earth',
-  latlng: [-33.86785, 151.20732] as [number, number],
+  location: 'VinUniversity, Đa Tốn, Gia Lâm, Hà Nội',
+  latlng: [20.98816810203993, 105.94433479774092] as [number, number],
   repository: 'https://github.com/hellotham/hello-astro',
   buildTime: new Date()
 }
@@ -39,18 +39,19 @@ export { default as DefaultSVG } from './assets/svg/undraw/undraw_my_feed.svg'
 export { default as DefaultImage } from './assets/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
-  { name: 'Home', href: '' },
+  { name: "Home", href: '' },
   { name: 'About', href: 'about' },
+  { name: 'Activities', href: '' },
+  { name: 'News', href: 'blog' },
+  { name: 'Research Projects', href: '' },
   { name: 'Contact', href: 'contact' },
-  { name: 'Blog', href: 'blog' },
-  { name: 'Docs', href: 'doc/introduction' }
 ]
 
 export const PAGE_SIZE = 6
 
-export const GITHUB_EDIT_URL = `https://github.com/hellotham/hello-astro`
+export const GITHUB_EDIT_URL = `https://github.com/h114mx001/vrc-site`
 
-export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
+export const COMMUNITY_INVITE_URL = `https://facebook.com/vinuniresearchclub`
 
 export type Sidebar = Record<string, { text: string; link: string }[]>
 
